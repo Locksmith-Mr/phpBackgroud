@@ -15,3 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/doc', 'SwaggerController@doc');
+
+Route::get('/test', 'TestController@test1');
+Route::post('/test2', 'TestController@test2');
+
+Route::get('/testview', function (){
+    return view('test');
+});
